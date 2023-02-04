@@ -1,0 +1,45 @@
+Q1: How does the Prophet Algorithm differ from an LSTM?
+
+Prophet and LSTM (Long Short-Term Memory) are both algorithms used for time series forecasting, but they differ in their approach and the type of problem they solve.
+
+Prophet is a univariate time series forecasting model developed by Facebook, which is based on decomposing the time series into trend, seasonality and holiday components.
+It is best suited for modeling trends with strong seasonality and for analyzing time series data that has a clear trend and yearly or weekly seasonality.
+On the other hand, LSTM is a type of Recurrent Neural Network (RNN) designed to handle sequential data, such as time series data. LSTMs are best suited for modeling time series data with complex patterns, 
+such as long-term dependencies, as they have memory cells that can store historical information and use it to make predictions.
+
+Q1:Why does an LSTM have poor performance against ARIMA and Profit for Time Series?
+
+LSTMs may have poor performance compared to ARIMA and Prophet:
+
+Data Characteristics: LSTMs perform best when the time series data has complex patterns, such as long-term dependencies. 
+If the data is simple, with a clear trend and seasonality, ARIMA and Prophet, which are specialized algorithms for time series forecasting with clear patterns, may perform better.
+
+Model Hyperparameter Tuning: LSTMs require careful tuning of their hyperparameters, such as the number of hidden units and the number of time steps to consider.
+ If the hyperparameters are not properly set, the performance of the LSTM may be poor.
+
+Training Data Size: LSTMs are deep learning models and require a large amount of training data to perform well. If the training data size is too small, the performance of the LSTM may be poor.
+
+Overfitting: LSTMs are prone to overfitting, which occurs when the model learns the noise in the training data and does not generalize well to new data. 
+To avoid overfitting, it is important to use regularization techniques, such as dropout, and to monitor the performance on a validation set.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Q2:What is exponential smoothing and why is it used in Time Series Forecasting?
+
+Exponential smoothing is a time series forecasting method that uses a weighted average of past observations to make predictions. 
+The weight assigned to each past observation decreases exponentially, so that more recent observations are given more weight and older observations are given less weight.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Q3: What is seasonality? Why Is Stationarity Important in Time Series Forecasting?
+
+Seasonality refers to the recurring patterns in a time series data that can be attributed to regular events or cycles, such as annual patterns in sales data due to holiday shopping.
+
+Stationarity is important in time series forecasting because most statistical methods for time series analysis and forecasting are based on the assumption of stationarity,
+ meaning that the statistical properties of the series are constant over time. Stationary time series have a constant mean, variance, and autocorrelation structure, 
+which makes it easier to model and make predictions. Non-stationary time series are often more difficult to model and can lead to inaccurate forecasting results.
+
+
+
+
+-------------------------------------------------------------------
+Q4: 
+Seasonality is predictable, whereas cyclicality is not.
