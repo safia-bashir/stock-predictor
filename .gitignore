@@ -127,4 +127,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-.stock-predictor-fastapi_safia.pem
+stock-predictor-fastapi_safia.pem
